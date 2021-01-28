@@ -23,9 +23,8 @@ public class NIOClient {
             }
         }
         String str="hello world";
-
-            ByteBuffer buffer=ByteBuffer.wrap(str.getBytes());
-            socketChannel.write(buffer);
+        ByteBuffer buffer=ByteBuffer.wrap(str.getBytes());
+        socketChannel.write(buffer);
 
 
     }
